@@ -56,3 +56,43 @@ Follow these steps to test the network speed between a server machine (where you
 On the server machine, open your terminal or command prompt and install Flask:
 ```bash
 pip install Flask
+```
+
+#### 2. Save the Script
+
+Save the Python code as a file named `speedtest.py` on the server machine.
+
+#### 3. Find the Server's IP Address
+
+You will need the local IP address of the server machine so the client can connect to it.
+
+* **On Windows:** Open Command Prompt and type `ipconfig`. Look for the "IPv4 Address".
+* **On macOS or Linux:** Open a terminal and type `ip addr` or `ifconfig`. Look for the "inet" address.
+
+It will typically look like `192.168.1.15` or `10.0.0.32`.
+
+#### 4. Run the Server
+
+In the same directory where you saved `speedtest.py`, run the script:
+```bash
+python speedtest.py
+```
+You will see output indicating that the server is preparing data and is now running.
+
+```
+Server: Preparing 128MB of random data for downloads...
+Server: Data preparation complete. Took 1.23 seconds.
+Server: Prepared data size: 128MB
+
+🚀 Server starting...
+Access the speed test at [http://127.0.0.1:8080](http://127.0.0.1:8080) or http://<your-ip>:8080
+* Serving Flask app 'speedtest'
+* Running on [http://0.0.0.0:8080](http://0.0.0.0:8080)
+```
+
+#### 5. Run the Test on the Client
+
+1.  On your client device (e.g., your phone, laptop, etc.), open a web browser.
+2.  In the address bar, type `http://<server_ip>:8080`, replacing `<server_ip>` with the IP address you found in step 3.
+    * Example: `http://192.168.1.15:8080`
+3.  The speed test page will load. Click the **Download** or **Upload** buttons to begin testing. The results will be displayed on the page.
