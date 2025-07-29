@@ -95,6 +95,8 @@ Access the speed test at [http://127.0.0.1:8080](http://127.0.0.1:8080) or http:
 1.  On your client device (e.g., your phone, laptop, etc.), open a web browser.
 2.  In the address bar, type `http://<server_ip>:8080`, replacing `<server_ip>` with the IP address you found in step 3.
     * Example: `http://192.168.1.15:8080`
+3.  The speed test page will load. Click the **Download** or **Upload** buttons to begin testing. The results will be displayed on the page.
+
 ## Troubleshooting
 
 ### Connection Issues
@@ -110,4 +112,4 @@ The server listens on TCP port **8080**. Most operating systems have a built-in 
 2.  **Temporarily Disable the Firewall (Easy, but use with caution):** For a quick test, you can temporarily disable the firewall on the server machine. **IMPORTANT:** Remember to re-enable your firewall immediately after you have finished testing to keep your system secure.
 
 A good way to confirm the problem is firewall-related: If you can successfully load the page using `http://127.0.0.1:8080` on the server machine itself, but not from another device using its IP address (`http://<server_ip>:8080`), the firewall is almost always the culprit.
-3.  The speed test page will load. Click the **Download** or **Upload** buttons to begin testing. The results will be displayed on the page.
+
